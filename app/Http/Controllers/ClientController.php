@@ -185,6 +185,7 @@ class ClientController extends BaseController
         }
 
         $success['authenticated'] = true;
+        $success['client'] = $client;
 
         return $this->sendResponse($success, 'Valid api key!');
     }

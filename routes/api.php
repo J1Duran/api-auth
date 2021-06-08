@@ -27,5 +27,5 @@ Auth::routes();
  * 
  */
 Route::resource('clients', 'ClientController')->except(['show']);
-Route::post('check-clients', 'ClientController@checkSecret');
+Route::get('check-clients', 'ClientController@checkSecret');
 Route::get('check-users', 'HomeController@checkUserAuthentication');
